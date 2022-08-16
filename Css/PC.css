@@ -1,0 +1,587 @@
+/*en tete PC*/
+@font-face
+{
+    font-family: "Raleway-Regular";
+    src:url(/Fonts/Raleway-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "raleway-bold";
+    src:url(/Fonts/Raleway-Bold.ttf);
+    font-weight: bold;
+    font-style:normal
+}
+@font-face
+{
+    font-family: "raleway-semibold";
+    src:url(/Fonts/Raleway-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+a
+{
+    text-decoration:none ;
+    color: black;
+}
+body
+{
+    font-family:"Raleway-Regular";
+    margin: 0%;
+}
+/*haut de page*/
+header
+{
+    display: flex;
+    justify-content: flex-end;
+}
+header a 
+{
+    display: flex;
+    margin-right: auto;
+    align-content: center;
+}
+#logobooki
+{
+    width: 145px;
+    max-width: 145px;
+    height: 77px;
+    max-height: 77px;
+    padding-top: 6%;
+}
+#logobooki img
+{
+    margin-right: auto;
+}
+nav
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 1%;
+}
+nav a
+{
+    padding:2rem;
+    border-top: 3px solid transparent;
+}
+nav a:hover
+{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+.topofpage
+{
+    padding: 2% 2% 0% 2%;
+    
+}
+.pagetitle h1
+{ 
+    font-size: 30px;
+    font-family: "raleway-semibold";
+    margin-bottom: 1%;
+}
+.pagetitle p 
+{
+    font-size: 18px;
+    margin-top: 0%;
+}
+/*barre de recherche */
+.searchbar
+{
+   display: flex;
+   margin-top: 3%;
+}
+
+.searchbar i 
+{
+    height: 10px;
+    padding: 20px;
+    display: flex;
+    background-color: #f2f2f2;
+    border: none; 
+    height: 10px;
+    border-radius: 20px 0px 0px 20px;
+    color: black;
+    align-items: center;
+    
+}
+input /*zone de recherche de localisation*/
+{
+    padding-left: 10px;
+    border: 1px #f2f2f2 solid ;
+    font-weight: bold;
+    font-size: 100%;
+    width: 300px;
+    min-width: 300px;
+}
+button
+{
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 100%;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.fa-solid.fa-magnifying-glass/*icone loupe présent seulement en version tablette et smartphone*/
+{   
+   display: none;
+}
+/*partie filtres*/
+.filters
+{
+    font-family: "raleway-semibold";
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+.textfilters
+{
+    display: flex;
+    font-size: 100%;
+    margin-right: 2%;
+}
+.filters-elements
+{
+    display: flex;
+}
+.filters a
+{
+    display: flex;
+}
+.inside-filters
+{
+    display: flex;
+    align-items: center;
+    border: 3px #f2f2f2 solid;
+    border-radius: 2rem;
+    margin-right: 20px;
+}
+.inside-filters:hover
+{
+    background-color: #DEEBFF;
+    transition-duration: 0.5s;
+}
+.filters i /*taille bordure filtres, permet de centrer les icones*/
+{
+    display: inline-flex;
+    height: 10px;
+    padding: 20px;
+}
+.icon 
+{
+    display: flex;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    align-items: center;
+    border-radius: 100%;
+    margin: -2px;
+}
+.filterstitle
+{
+    display: flex;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+/*Partie Information*/
+.information
+{
+    display: flex;
+    margin-top:20px ;
+    align-items: center;
+}
+.information i/*icone de la partie information*/
+{
+    display: flex;
+    border: 2px #f2f2f2 solid;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px 8px;/*agrandis les bords autour de l'icone*/
+    font-size: 75%;
+    color: #0065FC;
+    align-content: center;
+    margin-right: 10px;  
+}
+.price/*regroupe les parties hebergements et populaire*/
+{
+    display: flex;
+    padding: 2%;
+}
+/*partie hébergements*/
+.accomodation
+{
+    margin-right: auto;
+    width: -webkit-fill-available;
+}
+.marseille-accomodation
+{
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    padding-bottom: 1%;
+}
+.accomodation-title
+{
+    font-family: "raleway-bold";
+    display: flex;
+    padding-left: 2%;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 1%;
+    padding-top: 2%;
+}
+.accomodation-list
+{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-around;
+}
+.accomodation-list a 
+{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3%;
+}
+.accomodation-elements
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #e5e5e5;
+    height: 92%;
+    padding: 0.4rem;/*bordure autour de la photo*/
+    width: 100%;
+    margin-right: 6%;
+}
+.accomodation-elements:hover
+{
+    box-shadow:8px 8px 8px gray ;
+    transition-duration: 0.5s;
+}
+.element-photos
+{
+   display: flex;
+   border-radius: 20px 20px 0 0;
+   object-fit: cover;
+   height: 7em;
+   width: 100%;
+}
+.element-text
+{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+.element-name h3
+{
+    font-family: "raleway-bold";
+    font-size: 18px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.element-name p
+{
+    margin-bottom: 4%;
+    font-size: 13px;
+    margin-top: 0%;
+}
+.ratings
+{
+    display: flex;
+    margin-top: 1%;
+    font-size: 75%;
+    padding-bottom: 2%;
+}
+.fa-solid.fa-star/*icone etoile bleu*/
+{
+    display:flex;
+    color:#0065FC;
+    padding: 1px;
+}
+.fa-solid.fa-star.grey/*icone etoile grise*/
+{
+    color: #f2f2f2;
+}
+.accomodation-bottom
+{
+    font-family: "raleway-semibold";
+    margin-left: 3%;
+    margin-bottom: 4%;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*partie populaire*/
+.popular
+{
+    display: flex;
+    margin-left: 2%;
+}
+.most-popular
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+.most-popular a 
+{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5% 0 5%;
+}
+.popular-title
+{
+    display: flex;
+    align-items:center;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.popular-title h2
+{
+    font-family: "raleway-bold";
+    margin-right: auto;
+    margin-left: 1%;
+    font-size: 135%;
+}
+.popular-elements
+{
+    display: flex;
+    background-color: white;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    width: 21em;
+    height: 8em;
+    align-content: center;
+    margin-top: 8%;
+    box-shadow: 3px 3px 3px #e5e5e5 ;
+    padding: 0.4rem;
+}
+.popular-elements:hover
+{
+    box-shadow: 8px 8px 8px grey;
+    transition-duration: 0.5s;
+}   
+.popular-photos
+{
+    width: 8em;
+    max-width: 7em;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+.popular-text
+{
+    margin-left: 5%;
+}
+.popular-name h3
+{
+    font-family: "raleway-bold";
+    font-size: 110%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.popular-name p
+{
+    font-size: 96%;
+    margin-top: 0%;
+}
+.popular-ratings
+{
+    display: flex;
+    font-size: 75%;
+    margin-top: 21%;
+}
+.fa-solid.fa-star.popular/*icone etoile couleur noir*/
+{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 120%;
+    margin-right: 6%;
+}
+/*Partie activités*/
+.activity
+{
+    padding: 0% 2% 2% 2%;
+}
+.activity h2
+{
+    font-family: "raleway-bold";
+}
+.activity p 
+{
+    margin-top: 3%;
+}
+.activity-elements
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 52px;
+  grid-template-rows:repeat(6,4rem);
+  width: 100%;
+  gap: 3%;
+}
+.activity-elements a:hover
+{
+    box-shadow: 8px 8px 8px  gray;
+    transition-duration: 0.5s;
+}
+.activity-elementsxl1
+{
+    grid-row: 1/7;
+    grid-column: 1/2;
+    width: 100%;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    border-radius: 20px;
+}
+.activity-elementsxl1 img
+{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.activity-text
+{
+   margin-left: 4%;
+   font-weight: bold;
+   margin-top: 3%;
+}
+
+.activity-elements-large2
+{
+    grid-row: 1/5;
+    grid-column: 2/3;
+    width: 100%;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    border-radius: 20px;
+    height: 90%;
+}
+.activity-elements-large2 img
+{
+    width: 100%;
+    height: 82%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.activity-elements-small3
+{
+    grid-column: 2/3;
+    grid-row: 5/7;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    border-radius: 20px;
+}
+.activity-elements-small3 img
+{
+    width:100%;
+    object-fit: cover;
+    height: 68%;
+    border-radius: 20px 20px 0 0;
+}
+.activity-elementsxl4
+{
+    grid-column: 3/4;
+    grid-row: 1/7;
+    width: 100%;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    border-radius: 20px;
+}
+.activity-elementsxl4 img
+{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.activity-elements-medium5
+{
+    grid-row: 1/4;
+    grid-column: 4/4;
+    width: 100%;
+    height: 86%;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    border-radius: 20px;
+}
+.activity-elements-medium5 img
+{
+    width: 100%;
+    height: 73%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.activity-elements-medium6
+{
+    grid-column: 4/4;
+    grid-row: 4/7;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #F2F2F2;
+    cursor: pointer;
+}
+.activity-elements-medium6 img
+{
+    width: 100%;
+    height: 79%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+/*Pied de page*/
+footer
+{
+    margin-top: 5%;
+    background-color: #F2F2F2;
+}
+footer a:hover
+{
+    text-decoration: underline;
+}
+.footer-elements
+{
+    display: flex;
+    padding: 2% 0 3% 0;
+}
+footer h3
+{
+    font-family: "raleway-semibold";
+    font-size: larger;
+}
+footer ul 
+{
+    list-style-type: none;
+    padding-left: 0%;
+}
+footer li 
+{
+    margin-bottom: 5%;
+}
+.about
+{
+    margin-right: 12%;
+    width: 20%;
+    padding-left: 2%;
+}
+.accomodation-footer
+{
+    margin-right: 14%;
+    width: 19%;
+}
+.assistance
+{
+   width: 16%;
+}

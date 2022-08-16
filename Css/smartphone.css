@@ -1,0 +1,253 @@
+    body 
+    {
+        padding: 0;
+    }
+    #logobooki
+    {
+        width: 124px;
+        height: 63px;
+        margin-bottom: 4%;
+    }
+    .topofpage
+    {
+        padding: 0;
+    }
+    .pagetitle
+    {
+        padding: 3% 3% 0 4%;
+    }
+    .pagetitle h1
+    {
+        font-size: 23px;
+    }
+    .pagetitle p 
+    {
+        font-size: 17px;
+        margin-top: 4%;
+        margin-bottom: 8%;
+    }
+    .searchbar
+    {
+        padding: 0 5% 0 4%;
+    }
+   .filters
+    {
+        padding-left: 4%;
+        margin-left:0% ;
+    }
+    .textfilters
+    {
+        margin-right: 100%;
+        padding-left: 2%;
+    }
+    .filters-elements
+    {
+        display: flex;
+        flex-wrap: inherit;
+        margin-left: 0%;
+    }
+    .filters a 
+    {
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    .inside-filters
+    {
+        margin-bottom: 2%;
+        margin-right: 1%;
+    }
+    .filterstitle
+    {
+        width: max-content;
+    }
+    .information
+    {
+        padding-left: 5%;
+        margin-top: 1%;
+    }
+    .information p 
+    {
+        font-size: 100%;
+        padding-right: 2%;
+    }
+    .price
+    {
+        padding: 0%;
+    }
+    .accomodation 
+    {
+        margin-right: 0;
+        width: 100%;
+    }
+    .marseille-accomodation
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+    }
+    
+    .accomodation-title
+    {
+        margin: 2% 0 2% 0;
+        font-size: 100%;
+        padding-left: 3%;
+    }
+    .accomodation-list
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding-left: 4%;
+        padding-right: 5%;
+        width: 89%;
+    }
+    .accomodation-list a 
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6%;
+        width: 100%;
+    }
+    .accomodation-elements
+    {
+        box-shadow: 3px 3px 3px 3px #e5e5e5;
+        height: 95%;
+        padding: 5px;
+        width: 98%;
+    }
+    .element-photos
+    {
+        width: 100%;
+        height: 7em;
+    }
+    .element-text
+    {
+        padding: 2%;
+    }
+    .element-name h3 
+    {
+        font-size: 18px;
+    }
+    .element-name p 
+    {
+        margin-bottom: 2%;
+        font-size: 14px;
+    }
+    .ratings
+    {
+        font-size: 69%;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .accomodation-bottom 
+    {
+        margin-left: 4%;
+    }
+    .most-popular
+    {
+        margin-bottom: 0%;
+        padding: 0 2% 10% 2%;
+    }
+    .most-popular a 
+    {
+        padding: 0 2% 0 2%;
+    }
+    .popular-title
+    {
+        font-size: 115%;
+    }
+    .popular-title h2
+    {
+        margin: 8% auto 2% 2%;
+    }
+    .fa-solid.fa-star.popular/*icone etoile couleur noir*/
+    {
+        margin-right: 0;
+    }
+    .popular-photos
+    {
+        width: 35%;
+        max-width: 35%;
+    }
+    .popular-text
+    {
+        font-size: 90%;
+    }
+    .popular h3
+    {
+        margin-bottom: 4%;
+    }
+    .popular-ratings
+    {
+        margin-top: 20%;
+    }
+    /*partie activités*/
+    .activity 
+    {
+        padding: 0% 2% 2% 2%;
+    }
+    .activity h2
+    {
+        margin-left: 2%;
+    }
+    .activity-elements
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,12rem);
+        margin-left: 3%;
+        margin-right: 1%;
+        width: 94%;
+    }
+    .activity-elements-large2
+    {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .activity-elements-small3
+    {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .activity-elementsxl4
+    {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .activity-elements-medium5
+    {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .activity-elements-medium6
+    {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+    /*Pied de page*/
+    footer li 
+    {
+        margin-bottom: 7%;
+    }
+    .footer-elements
+    {
+        flex-direction: column;
+        margin-top: 69%;
+        margin-left: 3%;
+    }
+    .about
+    {
+        width: 91%;
+        padding-left: 4%;
+    }
+    .accomodation-footer
+    {
+        width: 85%;
+        padding-left: 4%;
+    }
+    .assistance
+    {
+        width: 80%;
+        padding-left: 4%;
+    }
